@@ -6,7 +6,7 @@ public class Usuario {
     private String email_institucional;
     private String senha;
 
-    public Usuario(String nome, String cpf, String email_pessoal){
+    public Usuario(String nome, String cpf, String email_pessoal) {
         this.nome = nome;
         this.cpf = cpf;
         this.email_pessoal = email_pessoal;
@@ -39,6 +39,16 @@ public class Usuario {
     public void setIdade(int idade) {
         if (idade >= 0) {
             this.idade = idade;
+        }
+    }
+
+    public String getEmail_pessoal() {
+        return this.email_pessoal;
+    }
+
+    public void setEmail_pessoa(String email_pessoa) {
+        if (!email_pessoa.isBlank()) {
+            this.cpf = cpf;
         }
     }
 }
