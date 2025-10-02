@@ -6,20 +6,12 @@ public class Usuario {
     private String email_institucional;
     private String senha;
 
-    public Usuario(String nome, String cpf, String email_pessoal) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email_pessoal = email_pessoal;
-    }
-
     public String getNome() {
         return this.nome;
     }
 
     public void setNome(String nome) {
-        if (!nome.isBlank()) {
-            this.nome = nome;
-        }
+        this.nome = nome;
     }
 
     public String getCpf() {
@@ -27,9 +19,7 @@ public class Usuario {
     }
 
     public void setCpf(String cpf) {
-        if (!cpf.isBlank()) {
-            this.cpf = cpf;
-        }
+        this.cpf = cpf;
     }
 
     public int getIdade() {
@@ -37,18 +27,31 @@ public class Usuario {
     }
 
     public void setIdade(int idade) {
-        if (idade >= 0) {
-            this.idade = idade;
-        }
+        this.idade = idade;
     }
 
     public String getEmail_pessoal() {
         return this.email_pessoal;
     }
 
-    public void setEmail_pessoa(String email_pessoa) {
-        if (!email_pessoa.isBlank()) {
-            this.cpf = cpf;
-        }
+    public void setEmail_pessoal(String email_pessoal) {
+        this.email_pessoal = email_pessoal;
     }
+
+    public String getEmail_institucional() {
+        return this.email_institucional;
+    }
+
+    public void setEmail_institucional(String email_institucional) {
+        this.email_institucional = email_institucional;
+    }
+
+    public String getSenha() {
+        return this.senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
 }
